@@ -1,0 +1,38 @@
+@font-face{font-family:'DINPro-Black';src:url('../fonts/DINPro-Black.eot');src:url('../fonts/DINPro-Black.eot?#iefix') format('embedded-opentype'),url('../fonts/DINPro-Black.svg#DINPro-Black') format('svg'),url('../fonts/DINPro-Black.ttf') format('truetype'),url('../fonts/DINPro-Black.woff') format('woff');}
+@font-face{font-family:'DINPro-Bold';src:url('../fonts/DINPro-Bold.eot');src:url('../fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'),url('../fonts/DINPro-Bold.svg#DINPro-Bold') format('svg'),url('../fonts/DINPro-Bold.ttf') format('truetype'),url('../fonts/DINPro-Bold.woff') format('woff');}
+@font-face{font-family:'DINPro-Regular';src:url('../fonts/DINPro-Regular.eot');src:url('../fonts/DINPro-Regular.eot?#iefix') format('embedded-opentype'),url('../fonts/DINPro-Regular.svg#DINPro-Regular') format('svg'),url('../fonts/DINPro-Regular.ttf') format('truetype'),url('../fonts/DINPro-Regular.woff') format('woff');}
+@font-face{font-family:'DINPro-Light';src:url('../fonts/DINPro-Light.eot');src:url('../fonts/DINPro-Light.eot?#iefix') format('embedded-opentype'),url('../fonts/DINPro-Light.svg#DINPro-Light') format('svg'),url('../fonts/DINPro-Light.ttf') format('truetype'),url('../fonts/DINPro-Light.woff') format('woff');}
+
+body{margin:0;padding:0;}
+
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+.hidden{opacity:0;}
+.visible{opacity:1;}
+
+textarea:focus,input:focus{outline:none;}
+
+::-webkit-scrollbar{width:5px;}
+::-webkit-scrollbar-thumb{border-width:1px 1px 1px 2px;border-color:#777;background-color:#fed700;}
+::-webkit-scrollbar-track{border:1px solid #e5e5e5;background-color:#eee;}
+
+#preloader{position:fixed;background:url(../img/bg-w.jpg) center center / cover;bottom:0;right:0;top:0;left:0;overflow:hidden;z-index:102;}
+#preloader .line-1{position:absolute;top:calc(50% - 30px);left:calc(50% - 40px);width:140px;height:5px;background:#fed700;clip:rect(0,0,20px,0);-webkit-animation:slide 2s ease 0s infinite;animation:slide 2s ease 0s infinite;}
+#preloader .line-2{position:absolute;top:calc(50% - 20px);left:calc(50% - 40px);width:140px;height:5px;background:#fed700;clip:rect(0,0,20px,0);-webkit-animation:slide 2s ease 0.25s infinite;animation:slide 2s ease 0.25s infinite;}
+#preloader .line-3{position:absolute;top:calc(50% - 10px);left:calc(50% - 40px);width:140px;height:5px;background:#fed700;clip:rect(0,0,20px,0);-webkit-animation:slide 2s ease 0.5s infinite;animation:slide 2s ease 0.5s infinite;}
+#preloader .txt{position:absolute;top:50%;left:calc(50% - 45px);;width:90px;text-align:center;letter-spacing:2px;color:#333;font-family:DINPro-Regular;font-size:15px;-webkit-animation:fade 2s ease 0s infinite;animation:fade 2s ease 0s infinite;}
+
+.container{position:absolute;top:0%;bottom:0%;left:0%;right:0%;background:url(../img/shapka/bg.jpg) right center / cover;border:10px solid #555;overflow:hidden;}
+.container:before{content:"";position:absolute;left:0;right:0;bottom:0;top:0;background:rgba(0,0,0,.5);z-index:1;}
+.container .txt{position:relative;margin:15% 30px 0;text-align:center;z-index:2;}
+.container .txt span:first-child{color:#fff;font-family:DINPro-Black;font-size:55px;text-transform:uppercase;}
+.container .txt span:last-child{color:#fff;font-family:DINPro-Regular;font-size:30px;}
+.container .btn{position:relative;margin:30px auto 0;width:300px;height:47px;line-height:45px;background:#333;color:#fff;font-family:DINPro-Regular;font-size:16px;text-align:center;overflow:hidden;z-index:2;}
+.container .btn:before{position:absolute;content:"Перейти на сайт";background:#fed700;top:45px;bottom:0;left:0;right:0;line-height:50px;color:#333;transition:all 0.2s ease-out 0s;}
+.container .btn:hover:before{top:0;}
+
+@media screen and (max-width:500px){.container .txt span:first-child{font-size:35px;}.container .txt span:last-child{font-size:20px;}}
+
+@-webkit-keyframes slide{0%{clip:rect(0,0,20px,0);}30%{clip:rect(0,80px,20px,0);}50%{clip:rect(0,80px,20px,0);}80%{clip:rect(0,80px,20px,80px);}100%{clip:rect(0,80px,20px,80px);}}
+@keyframes slide{0%{clip:rect(0,0,20px,0);}30%{clip:rect(0,80px,20px,0);}50%{clip:rect(0,80px,20px,0);}80%{clip:rect(0,80px,20px,80px);}100%{clip:rect(0,80px,20px,80px);}}

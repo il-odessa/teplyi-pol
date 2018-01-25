@@ -1,0 +1,10 @@
+User-agent: Yandex
+Disallow: /admin/
+
+User-agent: Googlebot
+Disallow: /admin/
+Disallow: /apple-app-site-association
+Disallow: /.well-known/apple-app-site-association
+Disallow: /.well-known/assetlinks.json
+
+Host:

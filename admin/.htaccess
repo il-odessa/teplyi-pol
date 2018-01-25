@@ -1,0 +1,15 @@
+RewriteEngine on
+
+DirectoryIndex textolite.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^.*$ artcms.php?query=$0 [L,NC,QSA]
+
+<Files ~ "\.(ini|log)$">
+
+deny from all
+
+</Files>
+
+Options -Indexes

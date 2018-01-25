@@ -7,4 +7,4 @@ Disallow: /apple-app-site-association
 Disallow: /.well-known/apple-app-site-association
 Disallow: /.well-known/assetlinks.json
 
-Host:
+Host: teplyi-pol.imperia-laminata.com.ua
